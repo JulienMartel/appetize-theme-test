@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <body>
+    <iframe
+      id="appetize"
+      src="https://appetize.io/embed/z6jxcqpr4lldtt57iv6ubsdwzq"
+      width="378px" 
+      height="800px" 
+      frameborder="0" 
+      scrolling="no" 
+    ></iframe>
+
+    <button id="orientation">orientation</button>
+    <button id="theme">theme</button>
+
+    <script>
+      (function () {const n = window,i = document,o = i.getElementsByTagName("script")[0],t = i.createElement("script");
+      (t.src = "https://js.appetize.io/embed.js"), (t.async = 1), o.parentNode.insertBefore(t, o);
+      const s = new Promise(function (e) {t.onload = function () {e();};});n.appetize = {getClient: function (...e) {
+      return s.then(() => n.appetize.getClient(...e));},};})();
+    </script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
